@@ -1,124 +1,73 @@
 # Dynamic Multi-Style Transfer for Artistic Image Generation
 
-![Header Image](images/header.jpg)  
-*A robust system for real-time multi-style artistic transformations.*
-
----
-
 ## Overview
 
 This repository contains the implementation and findings of the research project titled **Dynamic Multi-Style Transfer for Artistic Image Generation**. The project focuses on developing a robust and flexible system for real-time multi-style transfer using convolutional neural networks (CNNs). By leveraging the power of the VGG19 network and advanced neural training techniques, the system offers high-quality stylization with dynamic customization of style weight ratios while minimizing computational overhead.
-
-![Example Style Transfer](images/overview_example.jpg)  
-*Example of multi-style artistic transformations.*
 
 ---
 
 ## Features
 
-- **Multi-Style Transfer:**  
-   Blend multiple artistic styles into a single target image with customizable style weights.
-
-- **Efficient Implementation:**  
-   Uses VGG19 for high-quality feature extraction with optimal performance.
-
-- **Dynamic Adjustability:**  
-   Real-time adjustments to style-to-content weight ratios for tailored outputs.
-
-- **Content Preservation:**  
-   Retains the structural integrity of the content image during stylization.
-
-- **Iterative Optimization:**  
-   Combines multiple styles while preserving clarity and diversity.
+- **Multi-Style Transfer:** Seamlessly blend multiple artistic styles into a single target image with customizable style weights.
+- **Efficient Implementation:** Utilizes VGG19 for feature extraction to ensure high-quality output without compromising computational efficiency.
+- **Dynamic Adjustability:** Allows real-time adjustments to the style-to-content weight ratio for tailored artistic outcomes.
+- **Content Preservation:** Maintains the structural integrity of the content image during stylization.
+- **Iterative Optimization:** Applies multiple styles sequentially, preserving stylistic diversity and content clarity.
 
 ---
 
 ## Methodology
 
-### Data Preprocessing
-- Resize and normalize content and style images for consistent processing.
-
-### Feature Extraction
-- Content features: Extracted from layer `conv4_2` of VGG19.  
-- Style features: Derived from layers (`conv1_1`, `conv2_1`, `conv3_1`, `conv4_1`, `conv5_1`).
-
-### Style Transfer Process
-- Style features represented as **Gram Matrices** to capture textures and patterns.  
-- Iterative updates ensure a seamless blend of content and multiple styles.
-
-![Process Diagram](images/process_diagram.jpg)  
-*Diagram showing the style transfer process.*
-
-### Loss Function
-- **Content Loss:** Ensures structural integrity.  
-- **Style Loss:** Maintains artistic elements.  
-- Combined as:
-  \[
-  L_{\text{total}} = \alpha \cdot L_{\text{content}} + \beta \cdot L_{\text{style}}
-  \]
-
-### Dynamic Customization
-- Adjust content-style weights for diverse outputs.
+1. **Data Preprocessing:**
+   - Resizing and normalizing input images for consistent processing.
+2. **Feature Extraction:**
+   - Content features extracted from layer `conv4_2` of VGG19.
+   - Style features derived from multiple layers (`conv1_1`, `conv2_1`, `conv3_1`, `conv4_1`, and `conv5_1`) to capture textures and patterns.
+3. **Style Transfer Process:**
+   - Style features represented as Gram matrices for efficient blending of textures and colors.
+   - Content and style features combined iteratively using optimization techniques.
+4. **Loss Function:**
+   - Weighted combination of content loss and style loss ensures balance between content integrity and stylization.
+   - Optimization carried out with the Adam optimizer.
+5. **Dynamic Customization:**
+   - Users can adjust style weights to achieve personalized results.
 
 ---
 
 ## Results
 
 ### Qualitative Analysis
-- Rich, stylized images preserving content details.  
-- Outputs blend multiple styles seamlessly.
-
-![Style Comparison](images/style_comparison.jpg)  
-*Comparison: Single-style vs Multi-style.*
+- Successfully applied multiple artistic styles to target images while preserving content details.
+- Demonstrated superior stylistic blending compared to traditional single-style transfer methods.
 
 ### Quantitative Analysis
-- Loss curves demonstrate rapid convergence for both style and content optimization.
+- Achieved convergence through efficient loss minimization, with clear exponential decay patterns in both style and content loss over iterations.
 
-![Loss Curves](images/loss_curves.jpg)  
-*Graphs showing loss decay over iterations.*
+### Example Outputs
+- Blends artistic elements from styles such as Monet, sandstone textures, and more into a unified output.
+- Side-by-side comparisons showcasing the system's versatility.
 
 ---
 
 ## Applications
 
-- **Digital Art Creation:** Tools for professional artists.  
-- **Content Creation:** Enhance creative outputs for media.  
-- **Interactive Tools:** Real-time style manipulation for developers.
-
----
-
-## Example Outputs
-
-### Style Examples
-- **Style 1:** Monet-inspired artistic textures.  
-  ![Monet Style](images/monet_style.jpg)  
-- **Style 2:** Sandstone-inspired patterns.  
-  ![Sandstone Style](images/sandstone_style.jpg)  
-
-### Final Stylized Image
-![Final Output](images/final_output.jpg)  
-*Content combined with multiple artistic styles.*
+- **Digital Art Creation:** Ideal for artists looking to experiment with multiple artistic styles.
+- **Content Creation:** Enables developers to integrate dynamic artistic elements into applications.
+- **Customization Tools:** Provides users with real-time control over artistic transformations.
 
 ---
 
 ## Future Scope
 
-1. **Real-Time Processing:**  
-   Optimizing for faster style application.
-
-2. **Video Style Transfer:**  
-   Applying consistent stylization across video frames.
-
-3. **Interactive UI:**  
-   Creating a user-friendly interface for real-time adjustments.
-
-4. **Advanced Neural Models:**  
-   Exploring deeper architectures for improved quality.
+- **Real-Time Processing:** Optimize computational efficiency to enhance real-time applications.
+- **Video Style Transfer:** Extend capabilities to include dynamic and consistent stylization for video content.
+- **Interactive UI:** Develop an interface for more intuitive style manipulation.
+- **Advanced Neural Architectures:** Explore deeper and more complex network models for further improvements.
 
 ---
 
 ## How to Use
 
-1. **Clone this repository:**  
+1. Clone this repository:
    ```bash
-   git clone https://github.com/kapilk05/Artistic-Neural-Style-Transfer.git
+   git clone https://github.com/username/dynamic-multi-style-transfer.git
