@@ -26,10 +26,9 @@ Below are examples showcasing the versatility of the system in blending multiple
 These images demonstrate the blending of various artistic styles like Monet's impressionist brushwork, sandstone textures, and more. Below are side-by-side comparisons showcasing the system's versatility in dynamically transferring and combining these styles onto the content image.
 
 - **Blended Output:**
-  The final result (`result.jpg`) merges these styles into a cohesive artwork, illustrating the power of multi-style transfer.
+  The final result merges these styles into a cohesive artwork, illustrating the power of multi-style transfer.
   
-  - **Final Artistic Output (result.jpg):**
-    <img src="result.jpg" width="300" />
+    <img src="finalresult (1).jpg" width="300" />
 
 ---
 
