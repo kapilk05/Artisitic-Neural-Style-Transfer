@@ -21,7 +21,7 @@ Below are examples showcasing the versatility of the system in blending multiple
     <img src="sandstone.jpg" width="300" />
 
   - **Stylestone Image:**
-    <img src="stone+style.jpg" width="300" />
+    <img src="stone_style.jpg" width="300" />
   
 These images demonstrate the blending of various artistic styles like Monet's impressionist brushwork, sandstone textures, and more. Below are side-by-side comparisons showcasing the system's versatility in dynamically transferring and combining these styles onto the content image.
 
