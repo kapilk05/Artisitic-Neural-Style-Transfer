@@ -28,7 +28,7 @@ These images demonstrate the blending of various artistic styles like Monet's im
 - **Blended Output:**
   The final result merges these styles into a cohesive artwork, illustrating the power of multi-style transfer.
   
-    <img src="finalresult (1).jpg" width="300" />
+    <img src="final result (1).jpg" width="300" />
 
 ---
 
